@@ -8,5 +8,5 @@
 Circle::Circle(double radius, std::string color) : Shape(color), radius(radius){}
 
 double Circle::get_area() const{
-    return M_PI * std::pow(radius, 2);
+    return M_PI * (radius * radius);
 }

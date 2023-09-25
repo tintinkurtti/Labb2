@@ -8,7 +8,8 @@
 #include "Shape.h"
 #include "Rectangle.h"
 
-class Parallelepiped : Rectangle{
+class Parallelepiped : public Rectangle{
+public:
     Parallelepiped(double h, double b, double d, std::string color);
     double get_area() const override;
 private:

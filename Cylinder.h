@@ -7,7 +7,8 @@
 
 #include "Circle.h"
 
-class Cylinder : Circle {
+class Cylinder : public Circle {
+public:
     Cylinder(double radius, double heigth, std::string color);
     double get_area() const override;
 private:

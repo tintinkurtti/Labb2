@@ -7,7 +7,7 @@
 
 #include "Shape.h"
 
-class Square : Shape {
+class Square : public Shape {
 public:
     Square(double side, std::string color);
     double get_area() const override;

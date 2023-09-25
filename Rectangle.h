@@ -7,7 +7,7 @@
 
 #include "Shape.h"
 
-class Rectangle : Shape{
+class Rectangle : public Shape{
 public:
     Rectangle(double h, double b, std:: string color);
     double get_area() const override;

@@ -4,9 +4,9 @@
 
 #include "Shape.h"
 
-Shape::Shape(std::string color) : color(std::move(color)){
+Shape::Shape(std::string color) : color((color)){
 }
 
-std::string Shape::get_color(){
+std::string Shape::get_color() const{
 return color;
 }

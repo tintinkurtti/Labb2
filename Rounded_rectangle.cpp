@@ -8,5 +8,5 @@
 
 Rounded_rectangle::Rounded_rectangle(double b, double h, double corner_radius, std::string color) : Rectangle(b, h, color), corner_radius(corner_radius){}
 double Rounded_rectangle::get_area() const{
-    return b * h + 2 * corner_radius * (b + h) + M_PI * pow(corner_radius, 2);
+    return b * h - (corner_radius * corner_radius) * (4 - M_PI);
 }
